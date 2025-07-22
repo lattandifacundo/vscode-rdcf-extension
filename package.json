@@ -1,0 +1,30 @@
+{
+  "name": "rdcf-extension",
+  "displayName": "rdcf-extension",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "1.102.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "rdcf",
+      "aliases": ["Regina Decor Carmeli Format", "rdcf"],
+      "extensions": [".rdcf"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "rdcf",
+      "scopeName": "text.rdcf",
+      "path": "./rdcf.tmLanguage.json"
+    }],
+    "iconThemes": [{
+      "id": "rdcf-icons",
+      "label": "RDCF Icon",
+      "path": "./icon-theme.json"
+    }]
+  }
+}

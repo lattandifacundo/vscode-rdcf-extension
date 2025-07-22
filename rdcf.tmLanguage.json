@@ -1,0 +1,117 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Regina Decor Carmeli Format",
+	"patterns": [
+		{
+			"name": "markup.bold",
+			"begin": "^---$",
+			"end": "^---$",
+			"patterns": [
+				{
+					"match": "^ref: (.*)$",
+					"captures": {
+						"1": {
+							"name": "string.unquoted.ref"
+						}
+					}
+				},
+				{
+					"name": "invalid.illegal.extra-line",
+					"match": "^(?!ref: ).+"
+				}
+			]
+		},
+		{
+			"match": "(##) (.*)",
+			"captures": {
+				"1": {
+					"name": "markup.heading.pound"
+				},
+				"2": {
+					"name": "string.unquoted.subtitle"
+				}
+			}
+		},
+		{
+			"match": "(#) (.*)",
+			"captures": {
+				"1": {
+					"name": "markup.heading.pound"
+				},
+				"2": {
+					"name": "string.unquoted.title"
+				}
+			}
+		},
+		{
+			"match": "(\\*)([0-9]{1,3})\\{\\{(.*)\\}\\}",
+			"captures": {
+				"1": {
+					"name": "markup.heading.pound"
+				},
+				"2": {
+					"name": "constant.numeric"
+				},
+				"3": {
+					"name": "constant.character"
+				}
+			}
+		},
+		{
+			"match": "(\\*)([0-9]{1,3})",
+			"captures": {
+				"1": {
+					"name": "markup.heading.pound"
+				},
+				"2": {
+					"name": "constant.numeric"
+				}
+			}
+		},
+		{
+			"match": "(\\*/)([a-z]*-[0-9]{1,3}-[0-9]{1,3}/[0-9]{1,3})",
+			"captures": {
+				"1": {
+					"name": "markup.heading.pound"
+				},
+				"2": {
+					"name": "constant.numeric"
+				}
+			}
+		},
+		{
+			"match": "(\\*/)([a-z]*-[0-9]{1,3}-[0-9]{1,3}-ss)",
+			"captures": {
+				"1": {
+					"name": "markup.heading.pound"
+				},
+				"2": {
+					"name": "constant.numeric"
+				}
+			}
+		},
+		{
+			"match": "(\\*/)([a-z]*-[0-9]{1,3}-[0-9]{1,3})",
+			"captures": {
+				"1": {
+					"name": "markup.heading.pound"
+				},
+				"2": {
+					"name": "constant.numeric"
+				}
+			}
+		},
+		{
+			"match": "(\\*/)([a-z]*-[0-9]{1,3})",
+			"captures": {
+				"1": {
+					"name": "markup.heading.pound"
+				},
+				"2": {
+					"name": "constant.numeric"
+				}
+			}
+		}
+	],
+	"scopeName": "text.rdcf"
+}

@@ -1,0 +1,11 @@
+{
+  "iconDefinitions": {
+    "rdcf": {
+      "iconPath": "./rdcf.png"
+    }
+  },
+  "fileExtensions": {
+    "rdcf": "rdcf"
+  },
+  "scope": "file"
+}
