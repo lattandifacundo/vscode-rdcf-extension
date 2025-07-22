@@ -20,11 +20,6 @@
       "language": "rdcf",
       "scopeName": "text.rdcf",
       "path": "./rdcf.tmLanguage.json"
-    }],
-    "iconThemes": [{
-      "id": "rdcf-icons",
-      "label": "RDCF Icon",
-      "path": "./icon-theme.json"
     }]
   }
 }

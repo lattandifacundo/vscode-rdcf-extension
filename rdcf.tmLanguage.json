@@ -44,20 +44,6 @@
 			}
 		},
 		{
-			"match": "(\\*)([0-9]{1,3})\\{\\{(.*)\\}\\}",
-			"captures": {
-				"1": {
-					"name": "markup.heading.pound"
-				},
-				"2": {
-					"name": "constant.numeric"
-				},
-				"3": {
-					"name": "constant.character"
-				}
-			}
-		},
-		{
 			"match": "(\\*)([0-9]{1,3})",
 			"captures": {
 				"1": {
