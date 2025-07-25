@@ -38,6 +38,10 @@
 			"name": "markup.italic"
 		},
 		{
+			"match": "\\\\n",
+			"name": "markup.bold"
+		},
+		{
 			"match": "(#) (.*)",
 			"captures": {
 				"1": {
