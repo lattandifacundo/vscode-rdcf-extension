@@ -33,6 +33,11 @@
 			}
 		},
 		{
+			"begin": "_",
+			"end": "_",
+			"name": "markup.italic"
+		},
+		{
 			"match": "(#) (.*)",
 			"captures": {
 				"1": {
