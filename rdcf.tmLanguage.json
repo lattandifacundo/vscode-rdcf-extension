@@ -42,6 +42,10 @@
 			"name": "markup.bold"
 		},
 		{
+			"match": "\\\\p",
+			"name": "markup.bold"
+		},
+		{
 			"match": "(#) (.*)",
 			"captures": {
 				"1": {
